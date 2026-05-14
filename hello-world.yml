@@ -1,0 +1,12 @@
+name: Hello World
+
+on:
+  push:
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest # Uses a GitHub-hosted runner
+    
+    steps:     
+      - name: Echo text
+        run: echo "Hello, world!"
